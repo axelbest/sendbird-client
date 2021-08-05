@@ -1,4 +1,4 @@
-##sendbird-client
+## Sendbird Client
 
 A simple wrapper for the Sendbird Chat Platform API.
 
