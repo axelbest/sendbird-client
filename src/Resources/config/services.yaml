@@ -1,0 +1,11 @@
+services:
+  axelbest_sendbird_api_response_validator:
+    class: Axelbest\SendbirdClient\Service\SendbirdApiResponseValidator
+
+  axelbest_sendbird_api_client:
+    class: Axelbest\SendbirdClient\Service\SendbirdApiClient
+    autowire: true
+    bind:
+      $responseValidator: '@axelbest_sendbird_api_response_validator'
+
+  Axelbest\SendbirdClient\Service\SendbirdApiClient: '@axelbest_sendbird_api_client'

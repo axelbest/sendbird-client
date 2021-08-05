@@ -1,0 +1,19 @@
+###> symfony/framework-bundle ###
+/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+/.build/.phpunit
+/.build/.phpunit.result.cache
+/.build/phpunit.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> IDE
+/.idea
+
+###> MacOS
+.DS_Store
+
+###> Customized developer tools
+/src/Command/TestCommand.php
