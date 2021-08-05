@@ -1,4 +1,6 @@
-##sendbird-client
+## Sendbird Client
+
+[![Coverage Status](https://coveralls.io/repos/github/axelbest/sendbird-client/badge.svg?branch=master)](https://coveralls.io/github/axelbest/sendbird-client?branch=master)
 
 A simple wrapper for the Sendbird Chat Platform API.
 
