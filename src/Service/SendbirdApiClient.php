@@ -26,7 +26,8 @@ final class SendbirdApiClient implements SendbirdApiClientInterface
     private NormalizerInterface $normalizer;
     private ApiResponseValidatorInterface $responseValidator;
 
-    public function __construct(        HttpClientInterface           $sendbirdClient,
+    public function __construct(
+        HttpClientInterface          $sendbirdClient,
         SerializerInterface           $serializer,
         NormalizerInterface           $normalizer,
         ApiResponseValidatorInterface $responseValidator

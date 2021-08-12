@@ -398,7 +398,7 @@ class SendbirdApiClientTest extends TestCase
             $this->httpClient,
             $this->serializer,
             $this->normalizer,
-            $this->responseValidator
+            $this->responseValidator,
         );
     }
 }

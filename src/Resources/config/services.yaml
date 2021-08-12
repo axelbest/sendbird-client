@@ -9,3 +9,16 @@ services:
       $responseValidator: '@axelbest_sendbird_api_response_validator'
 
   Axelbest\SendbirdClient\Service\SendbirdApiClient: '@axelbest_sendbird_api_client'
+
+framework:
+  http_client:
+    scoped_clients:
+      sendbird.client:
+        base_uri: 'https://api-%env(SENDBIRD_APPLICATION_ID)%.sendbird.com/v3/'
+        headers:
+          Accept: 'application/json'
+          Content-Type: 'application/json; charset=utf8'
+          Api-Token: '%env(SENDBIRD_API_TOKEN)%'
+        timeout: 10
+        max_duration: 12
+        max_redirects: 2
