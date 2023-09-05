@@ -26,18 +26,20 @@
         }
     ],
     "require": {
-        "php": "^7.4.1",
+        "php": "^8.0",
         "ext-json": "*",
-        "symfony/framework-bundle": "^4.4|^5.0",
-        "symfony/http-client": "5.3.*",
-        "symfony/http-foundation": "5.3.*",
-        "symfony/serializer": "5.3.*",
-        "symfony/security-core": "5.3.*",
-        "symfony/yaml": "5.3.*"
+        "symfony/console": "^6.0",
+        "symfony/framework-bundle": "^6.0",
+        "symfony/http-client": "^6.0",
+        "symfony/http-foundation": "^6.0",
+        "symfony/security-core": "^6.0",
+        "symfony/serializer": "^6.0",
+        "symfony/yaml": "^6.0"
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "^5.3",
-        "symfony/var-dumper": "5.3.*"
+        "roave/security-advisories": "dev-latest",
+        "symfony/phpunit-bridge": "^6.0",
+        "symfony/var-dumper": "^6.0"
     },
     "config": {
         "sort-packages": true
